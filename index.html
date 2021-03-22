@@ -33,10 +33,20 @@
     }
 
     footer {
-        text-align:center; 
-        padding:10px; 
-        margin-top: 10px; 
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
         font-weight: bold;
+    }
+
+    @media (max-width:992px) {
+        .container {
+           
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 10px;
+
+        }
     }
 </style>
 
@@ -95,7 +105,7 @@
         </div>
         <h3>NOTE: Insert Zero(0) on the input if any subject and credit unavailable &#128512;</h3>
 
-    </div> 
+    </div>
     <footer>&copy; A Gift To ShosheMoni &#128151</footer>
 
     <script src="script.js"></script>

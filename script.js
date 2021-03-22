@@ -1,5 +1,4 @@
 // subject cgpa
-
 const sub1 = () => {
     let cg1 = document.getElementById('subOne').value;
     cg1 = parseFloat(cg1)
