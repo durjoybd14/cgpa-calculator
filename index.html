@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+</head>
+<style>
+    .container {
+        border: 1px solid blue;
+        padding: 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+
+    }
+
+    .cgContainer {
+        border: 1px solid green;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .resultContainer {
+        border: 1px solid red;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    footer {
+        text-align:center; 
+        padding:10px; 
+        margin-top: 10px; 
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="cgContainer">
+            <h2>Please write the subject CGPA</h2>
+            <input type="text" name="sub-1" id="subOne" placeholder="sub-1">
+            <button onclick="sub1()">Sub1</button> <br><br>
+
+            <input type="text" name="sub-2" id="subTwo" placeholder="sub-2">
+            <button onclick="sub2()">sub2</button><br><br>
+
+            <input type="text" name="sub-3" id="subThree" placeholder="sub-3">
+            <button onclick="sub3()">Sub3</button><br><br>
+
+            <input type="text" name="sub-4" id="subFour" placeholder="sub-4">
+            <button onclick="sub4()">Sub4</button><br><br>
+
+            <input type="text" name="sub-5" id="subFive" placeholder="sub-5">
+            <button onclick="sub5()">Sub5</button><br><br>
+
+            <input type="text" name="sub-6" id="subSix" placeholder="sub-6">
+            <button onclick="sub6()">Sub6</button>
+        </div>
+
+
+
+        <div class="cgContainer">
+            <h2>Please write the subject credit respectively</h2>
+
+            <input type="text" name="sub-1" id="creditSubOne" placeholder="creditSubOne">
+            <button onclick="creditSub1()">creditSubOne</button> <br><br>
+
+            <input type="text" name="sub-2" id="creditSubTwo" placeholder="creditSubTwo">
+            <button onclick="creditSub2()">creditSubTwo</button><br><br>
+
+            <input type="text" name="sub-3" id="creditSubThree" placeholder="creditSubThree">
+            <button onclick="creditSub3()">creditSubThree</button><br><br>
+
+            <input type="text" name="sub-4" id="creditSubFour" placeholder="creditSubFour">
+            <button onclick="creditSub4()">creditSubFour</button><br><br>
+
+            <input type="text" name="sub-5" id="creditSubFive" placeholder="creditSubFive">
+            <button onclick="creditSub5()">creditSubFive</button><br><br>
+
+            <input type="text" name="sub-6" id="creditSubSix" placeholder="creditSubSix">
+            <button onclick="creditSub6()">creditSubSix</button>
+        </div>
+
+        <div class="resultContainer">
+            <h1>CGPA = <span id="cgpa"></span></h1>
+            <button onclick="cgpaFinal()">Calculate CGPA</button>
+
+        </div>
+        <h3>NOTE: Insert Zero(0) on the input if any subject and credit unavailable &#128512;</h3>
+
+    </div> 
+    <footer>&copy; A Gift To ShosheMoni &#128151</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
