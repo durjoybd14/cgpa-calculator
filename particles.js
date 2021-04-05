@@ -123,7 +123,9 @@ var pJS = function(tag_id, params){
           particles_nb: 2
         }
       },
-      mouse:{}
+      mouse:{
+        "hover":true
+      }
     },
     retina_detect: false,
     fn: {
