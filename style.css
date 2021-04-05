@@ -1,0 +1,15 @@
+body{ 
+	height:100%;
+}
+
+canvas{
+  display:block;
+}
+
+.count-particles{
+  position: absolute;
+}
+
+#particles-js{
+  height: 100%;
+}
